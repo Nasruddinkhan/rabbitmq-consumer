@@ -12,6 +12,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 @Data
 @Getter
 @Setter
@@ -33,5 +34,9 @@ public class User {
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	@JsonProperty("dob")
 	private LocalDate dob;
+	@JsonProperty("docType")
+	private String docType;
+	@JsonProperty("docSize")
+	private Integer docSize;
 	
 }
